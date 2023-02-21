@@ -1,0 +1,187 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Dec 22, 2022, 10:13:13 AM
+    Author     : User
+*/
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(A.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: 60% 20%;
+
+    font-family: sans-serif;
+    display:flex;
+    justify-content:flex-start;
+    height: 50vh;
+    align-items:flex-start;
+    
+}
+/*untuk nav bar*/
+.nav{
+    position:relative;
+    width: 1330px;
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+}
+a{
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position:relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align:start;
+    color: white;
+    cursor: pointer;
+    margin-left: 1em;
+}
+.animation {
+    position:absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+
+a:nth-child(1){
+    width: 950px
+}
+
+
+a:nth-child(2){
+    width: 180px;
+
+}
+a:nth-child(3){
+    width: 125px;
+}
+
+.start-Halaman Utama, a:nth-child(2):hover~.animation{
+    width: 190px;
+    left: 950px;
+    background-color: #e74c3c;
+}
+.start-Permohonan, a:nth-child(3):hover~.animation{
+    width: 150px;
+    left: 1150px;
+    background-color: #3498db;
+}
+
+/*Unutuk note*/
+.note1{
+    height: autopx;
+    width: autopx;
+    border: 1px solid black;
+    background: rgba(240, 240, 240, 0.7);
+    border-radius: 8px;
+    margin: 1% 10%;
+
+}
+.note2{
+    height: autopx;
+    width: autopx;
+    border: 1px solid black;
+    background: rgba(240, 240, 240, 0.7);
+    border-radius: 8px;
+    margin: 1% 10%;
+    color: black;
+}
+
+.img{
+    margin: 1% 23%;
+
+}
+
+/*utk form*/
+
+.form-box{ /*background form*/
+    width:380px;
+    height: 480px;
+    position:relative;
+    margin: 8% 10%;
+    background: rgba(240, 240, 240, 0.8);
+    padding: 5px;
+    overflow: hidden;
+}
+
+.button-box{ /*button1*/
+    width:350px;
+    margin: 15px auto;
+    position:relative;
+    box-shadow: 0 0 20px 9px #C7FDF8;
+    border-radius: 30px;
+
+}
+
+.toggle-btn{/*button1*/
+    padding:10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border:0;
+    outline: none;
+    position:relative;
+}
+
+#btn{/*button1*/
+    top:0;
+    left: 0;
+    position: absolute;
+    width: 160px;
+    height: 100%;
+    background:linear-gradient(to right,#09A092,#24F9E5);
+    border-radius: 30px;
+    transition: .5s;
+}
+.input-group{/*input text*/
+    top:180px;
+    position:absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field{/*input text*/
+    width:100%;
+    padding: 10px 0;
+    margin:2px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline:none;
+    background: transparent;
+}
+.label{
+    font-size: 13px;
+    color: black;
+}
+.form-login-register{
+    margin: -80px 0;
+}
+.submit-btn{/*button login dan daftar*/
+    width: 85%;
+    padding:10px 30px;
+    cursor:pointer;
+    display:block;
+    margin:15px 0;
+    background: linear-gradient(to right,#09A092,#24F9E5);
+    border:0;
+    outline: none;
+    border-radius: 30px;
+}
+
+#logmasuk{/*untuk pergerakan form*/
+    left: 50px;
+}
+
+#daftar{/*unutk pergerakan form*/
+    left: 450px;
+}

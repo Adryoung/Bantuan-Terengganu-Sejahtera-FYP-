@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Index</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style-indexA.css">
+    </head>
+    <body>
+        <div>
+            <div class="img"><img class="" src= "fyp.png" alt="" width="95px" height="80px"><img class="" src= "ganu.png" alt="" width="115px" height="80px"></div>
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button class="toggle-btn" type="button" onclick="logmasuk()">LOG MASUK</button>
+                    <button class="toggle-btn" type="button" onclick="daftar()">DAFTAR</button>
+                    <a href="http://localhost:8083/PROJEK/BTS/Pemohon/home.html" style="color: black;">Kembali</a>
+                    
+                </div>
+
+
+
+
+                <form id="logmasuk" class="input-group" action="admin-con.jsp">
+
+                    <div class="form-login-register">
+                        <h2>Log Masuk</h2>
+                        <h3>Portal Staff</h3>
+                        <label class="label" for="noKp">No Kad Pengenalan:</label>
+                        <input type="text" name="noKp" value="" class="input-field" id="Nokp" placeholder="Masukkan No Kad Pengenalan" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required/>
+                        <label class="label" for="ktL">Kata Laluan:</label>
+                        <input type="password" name="ktL" value="" id="ktL" class="input-field"  placeholder="Masukkan Kata Laluan" required>
+                        <input type="checkbox" onclick="show()"><label class="label">Show Password</label>
+                        <button name="logmasuk" class="submit-btn">Log Masuk</button>
+                        <a href="admin-ktL.jsp" class="label" style="color:black">Lupa Kata Laluan?</a>
+                        
+                    </div>
+                </form>
+
+                <form id="daftar" class="input-group" action="admin-con.jsp">
+
+                    <div class="form-login-register">
+                        <h2>Pendaftaran Akaun</h2>
+                        <label for="Nokp" class="label">No Kad Pengenalan:</label>
+                        <input type="text" name="noKp" value="" class="input-field" id="Nokp" placeholder="Masukkan No Kad Pengenalan" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required/>
+                        <label class="label" for="nama">Nama Penuh:</label>
+                        <input type="text" name="nama" value="" class="input-field" id="nama" placeholder="Masukkan Nama Penuh" required/>
+                        <label class="label" for="ktL">Kata Laluan:</label>
+                        <input type="password" name="ktL" value="" id="kt" class="input-field" placeholder="Masukkan Kata Laluan" minlength="8" maxlength="12" required >
+                        <input type="checkbox" onclick="showP()"><label class="label">Show Password</label>
+                        <button name="daftar" class="submit-btn">Daftar</button>
+                        
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script>
+            //untuk pergerakan
+            var x = document.getElementById("logmasuk");
+            var y = document.getElementById("daftar");
+            var z = document.getElementById("btn");
+
+            function daftar() {
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "115px";
+            }
+            var x = document.getElementById("logmasuk");
+            var y = document.getElementById("daftar");
+            var z = document.getElementById("btn");
+
+            function logmasuk() {
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0px";
+                
+            }
+            function show(){//ambik dari onclick
+  var x = document.getElementById("ktL"); //ambik dari id
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+function showP(){//ambik dari onclick
+  var x = document.getElementById("kt"); //ambik dari id
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+        </script>
+
+    </body>
+</html>

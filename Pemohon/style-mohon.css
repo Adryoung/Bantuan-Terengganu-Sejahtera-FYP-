@@ -1,0 +1,236 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Dec 27, 2022, 10:21:02 AM
+    Author     : User
+*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    height: 110%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(A.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+
+    ;
+}
+.tittle
+{
+    text-decoration: none;
+    color: red;
+    font-size: 28px;
+}
+.navbar
+{
+    display: flex;
+    align-items:center;
+    padding: 50px ;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+nav ul
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 70px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+nav ul li a:hover
+{
+    color: aqua;
+}
+
+.form-box{ /*background form*/
+    width:780px;
+    height: 520px;
+    position:relative;
+    margin: -1% 14%;
+    background: rgba(240, 240, 240, 0.8);
+    padding: 5px;
+    overflow: hidden;
+
+}
+.form-box2{ /*background form*/
+    width:780px;
+    height: 600px;
+    position:relative;
+    margin: -2% 14%;
+    background: rgba(240, 240, 240, 0.8);
+    padding: 5px;
+    overflow: hidden;
+
+}
+
+.button-box{ /*button1*/
+    width:450px;
+    margin: 15px auto;
+    position:relative;
+    box-shadow: 0 0 20px 9px #C7FDF8;
+    border-radius: 30px;
+
+}
+
+.toggle-btn{/*button1*/
+    padding:10px 80px;
+    cursor: pointer;
+    background: transparent;
+    border:0;
+    outline: none;
+    position:relative;
+
+}
+
+#btn{/*button1*/
+    top:0;
+    left: 0;
+    position: absolute;
+    width: 240px;
+    height: 100%;
+    background:linear-gradient(to right,#09A092,#24F9E5);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.input-group{/*input text*/
+    top:180px;
+    position:absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field{/*input text*/
+    width:100%;
+    padding: 10px 0;
+    margin:2px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline:none;
+    background: transparent;
+}
+
+.table {
+  border-collapse: collapse;
+  border: 1px solid black;
+   table-layout: auto;
+  width: 800px;  
+  height: 100px;
+  background-color: #E1E9E8;
+  
+} 
+
+.table th,.table td {
+  border: 1px solid black;
+  color: black;
+}
+.table thead{
+    color: black;
+    background: #34C2C4;
+    height: 60px;
+}
+.table td{
+    height: 50px;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 500px;
+      height:200px;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+#customers td:first-child{
+    background-color: #34C2C4;
+    width: 20px;
+}
+.bord{
+    border:solid 1 px;
+    width: 500px;
+    height: 100px;
+    border-radius: 10px;
+    background: linear-gradient(to right,#09A092,#24F9E5);
+}
+.label1{
+    font-size: 20px;
+    color: black;
+    
+}
+.label{
+    font-size: 13px;
+    color: black;
+}
+.dtl-upd{
+    margin: -80px 0;
+}
+.dtl{
+    margin: -150px 0;
+}
+.dtl2{
+    margin: -100px 0;
+}
+.submit-btn{/*button login dan daftar*/
+    width: 85%;
+    padding:10px 30px;
+    cursor:pointer;
+    display:block;
+    margin:15px 0;
+    background: linear-gradient(to right,#09A092,#24F9E5);
+    border:0;
+    outline: none;
+    border-radius: 30px;
+}
+
+#showD{/*untuk pergerakan form*/
+    left: 200px;
+}
+
+#update{/*unutk pergerakan form*/
+    left: 850px;
+}
